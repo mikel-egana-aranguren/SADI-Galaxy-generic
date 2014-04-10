@@ -14,6 +14,24 @@
 	<outputs>
 		<data format="text" name="output" />
 	</outputs>
+	
+	 <tests>
+		<test>
+			<param name="input" value="hello-input.rdf"/>
+			<param name="format" value="N3"/>
+			<output name="output" file="RDFSyntaxConverter_N3_test_hello_output"/>
+		</test>
+		<test>
+			<param name="input" value="hello-input.rdf"/>
+			<param name="format" value="N-TRIPLE"/>
+			<output name="output" file="RDFSyntaxConverter_N-TRIPLE_test_hello_output"/>
+		</test>
+		<test>
+			<param name="input" value="hello-input.rdf"/>
+			<param name="format" value="TAB"/>
+			<output name="output" file="RDFSyntaxConverter_TAB_test_hello_output"/>
+		</test>
+	</tests>
 	<help>
 	  
 	  **What it does** 
