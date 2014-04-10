@@ -29,7 +29,7 @@ public class SADIGenericClient {
 	public static void main(String[] args)  {
 		String service_URL = args[0];
 		String input_RDF = args[1];
-
+		
 		Service service;
 		try {			
 			service = ServiceFactory.createService(service_URL.trim());

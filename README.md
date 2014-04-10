@@ -4,7 +4,7 @@ SADI-Galaxy-generic
 About
 -----
 
-SADI Generic is a Galaxy tool that can execute any SADI service (http://sadiframework.org/). The inputs for the tool are the service URL and an RDF file. SADI Generic infers whether the RDF can be consumed by the service, and if so it executes the service, producing the result RDF (RDF/XML). Another tool, RDF Syntax Converter, is included to process the result: it converts any RDF/XML file to N3, N-Triple, or, (more importantly for Galaxy) a tab delimited, three column file (Subject-Predicate-Object). 
+SADI Generic is a Galaxy tool that can execute any [SADI](http://sadiframework.org/) service . The inputs for the tool are the service URL and an RDF file. SADI Generic infers whether the RDF can be consumed by the service, and if so it invokes the service, producing the result RDF (RDF/XML). Another tool, RDF Syntax Converter, is included to process the result: it converts any RDF/XML file to N3, N-Triple, or, (more importantly for Galaxy) a tab delimited, three column file (Subject-Predicate-Object). 
 
 Installation
 ------------
@@ -20,6 +20,7 @@ Installation
 ```
   <section name="SADI services" id="SADI">
     <tool file="SADI/sadi_generic.xml"/>
+    <tool file="SADI/RDFSyntaxConverter.xml"/>
   </section>
 ```
   
@@ -32,7 +33,7 @@ The RDF Syntax Converter can be tested as follows:
 
 `./run_functional_tests.sh -id RDFSyntaxConverter`
 
-In the case of SADI generic, rather than testing the tool itself, the tests execute different services that are usually up and working. They also work as examples you can use to execute SADI services with the adequate RDF inputs. One of the services is a mockup (SADI Python)[http://code.google.com/p/sadi/wiki/BuildingServicesInPython] service you can run at localhost: if you want to use it, install Python SADI (`easy_install sadi` or `pip install sadi`) and then run ` python galaxy-dist/test-data/localhost_SADI.py`. You can then proceed with the tests: 
+In the case of SADI generic, rather than testing the tool itself, the tests execute different services that are usually up and running (Also, the RDF serialisation is not deterministic so there is no way of generating an RDF file in order to do some detailed comparison, only vague criteria like containing URIs, XML validity, ...). They also work as examples you can use to execute SADI services with the adequate RDF inputs (Many SADI services only include the OWL input class, not the RDF input). One of the services is a mockup [SADI Python](http://code.google.com/p/sadi/wiki/BuildingServicesInPython) service you can run at localhost: if you want to use it, install Python SADI (`easy_install sadi` or `pip install sadi`) and then run `python galaxy-dist/test-data/localhost_SADI.py`. You can then proceed with the tests: 
 
 `./run_functional_tests.sh -id sadi_generic`
 
