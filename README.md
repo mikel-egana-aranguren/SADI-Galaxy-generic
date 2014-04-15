@@ -4,14 +4,14 @@ SADI-Galaxy-generic
 About
 -----
 
-SADI Generic is a Galaxy tool that can execute any [SADI](http://sadiframework.org/) service . The inputs for the tool are the service URL and an RDF file. SADI Generic infers whether the RDF can be consumed by the service, and if so it invokes the service, producing the result RDF (RDF/XML). Another tool, RDF Syntax Converter, is included to process the result: it converts any RDF/XML file to N3, N-Triple, or, (more importantly for Galaxy) a tab delimited, three column file (Subject-Predicate-Object). 
+SADI Generic is a Galaxy tool that can execute any [SADI](http://sadiframework.org/) service. The inputs for the tool are the service URL and an RDF file. SADI Generic infers whether the RDF can be consumed by the service, and if so it invokes the service, producing the result RDF (RDF/XML). Another tool, RDF Syntax Converter, is included to process the result: it converts any RDF/XML file to N3, N-Triple, or, (more importantly for Galaxy) a tab delimited, three column file (Subject-Predicate-Object). 
 
 Installation
 ------------
 
 1. Stop Galaxy.
 
-2. Download or clone with mercurial (`hg clone `).
+2. Download or clone with mercurial (`hg clone hg clone http://mikel-egana-aranguren@toolshed.g2.bx.psu.edu/repos/mikel-egana-aranguren/sadi_generic`).
 
 3. Copy everything under galaxy-dist/ to your server's galaxy-dist/ (i.e. recreate the tools/, tool-data/ and test-data/ directories in your server).
 
@@ -46,6 +46,6 @@ Please send any comment to mikel.egana.aranguren@gmail.com, or use GitHub to pul
 Acknowledgements
 ----------------
 
-This work is funded by the Marie Curie Cofund program of the EU, FP7, and the Genomic Resources group of the EHU.
+This work is funded by the Marie Curie Cofund program of the EU, FP7, and the Genomic Resources group of the UPV-EHU.
 
  
