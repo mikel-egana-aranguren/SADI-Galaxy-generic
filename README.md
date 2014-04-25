@@ -21,6 +21,7 @@ Installation
   <section name="SADI services" id="SADI">
     <tool file="SADI/sadi_generic.xml"/>
     <tool file="SADI/RDFSyntaxConverter.xml"/>
+    <tool file="SADI/mergeRDFgraphs.xml"/>
   </section>
 ```
   
