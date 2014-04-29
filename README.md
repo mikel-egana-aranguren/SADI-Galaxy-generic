@@ -9,7 +9,7 @@ SADI-Galaxy-generic is a Galaxy tool that can execute any [SADI](http://sadifram
 Dependencies
 ------------
 
-SADI-Galaxy-generic and RDF Syntax Converter depend on Java (tested with 1.7). Merge RDF Graphs depends on Python (Tested tested with 2.7.3) and [RDFLib](https://github.com/RDFLib/rdflib) (Tested with 4.1.1).
+SADI-Galaxy-generic and RDF Syntax Converter depend on Java (tested with 1.7). Merge RDF Graphs depends on Python (Tested tested with 2.7.3) and [RDFLib](http://github.com/RDFLib/rdflib) (Tested with 4.1.1).
 
 Installation
 ------------
